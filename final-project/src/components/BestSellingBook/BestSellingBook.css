@@ -1,0 +1,14 @@
+.BestSellingBook{
+    position: relative;
+    overflow: hidden;
+    background: var(--color--bg-2);
+}
+
+.bestselling-container{
+    width: 74% !important;
+    display: grid;
+    grid-template-columns: 38% auto;
+    gap: 100px;
+    align-items: center;
+    display: flex;
+}

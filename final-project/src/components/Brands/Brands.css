@@ -1,0 +1,26 @@
+.Brands{
+    background: var(--colo-bg-2);
+    padding: 20px 0;
+}
+
+.brands-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 100px;
+    align-items: center;
+}
+
+/*..........................Max-width:1024px..........................*/
+@media (max-width: 1024px) {
+    .brands-containerP{
+        gap: 20px;
+    }
+}
+
+
+/*..........................Max-width:600px..........................*/
+@media (max-width: 600px) {
+    .brands-containerP{
+        gap: 15px;
+    }
+}
