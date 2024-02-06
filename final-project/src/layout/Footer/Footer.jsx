@@ -1,6 +1,6 @@
 import './Footer.css';
 
-import { FootersLinksData} from '../../data/data'
+import { FootersLinksData} from '../../data/dataBookStore'
 
 
 import {Link} from 'react-router-dom'

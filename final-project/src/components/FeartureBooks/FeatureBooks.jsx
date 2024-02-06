@@ -8,7 +8,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
-import {featuredBooksData} from '../../data/data'
+import {featuredBooksData} from '../../data/dataBookStore'
 
 import { BsArrowReturnRight } from 'react-icons/bs';
 
