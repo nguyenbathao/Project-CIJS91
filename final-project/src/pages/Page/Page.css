@@ -1,0 +1,24 @@
+.Pages{
+    padding-top: 5rem;
+    padding-bottom: 5rem; 
+    background-color: white;
+}
+
+.page-container{
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.page-list{
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    gap: 30px;
+    
+}
+
+
+.list{
+    width: 90%; 
+    background-color: #FBCFE8; 
+    height: 300px;
+}

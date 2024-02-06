@@ -1,14 +1,22 @@
-// ở đây chỉ viết function call API
-import React from 'react'
+// // ở đây chỉ viết function call API
+// import React from 'react'
 
-const product = async() => {
-    const productAPI = 
-    await fetch('https://fakestoreapi.com/products')
-    .then(res=>res.json())
-    .then(json=>console.log(json))
+// import axios from 'axios'
 
-    return productAPI;
-}
+// // const product = async() => {
+// //     const productAPI = 
+// //     await fetch('https://fakestoreapi.com/products')
+// //     .then(res=>res.json())
+// //     .then(json=>console.log(json))
+
+// //     return productAPI;
+// // }
+
+// const urlApi = import.meta.env.VITE_URL_API_GLOBAL
+
+// const productList = () => {
+//     axios.get(`${urlApi}/products`).then((response))
+// }
 
 
-export default product
+// export default productv 

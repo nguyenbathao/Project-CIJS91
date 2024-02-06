@@ -1,76 +1,76 @@
-import './Footer.css'
+import './Footer.css';
 
-import { FootersLinksData} from '../../data/data'
+import { FootersLinksData } from '../../data/dataBookStore';
 
+import { Link } from 'react-router-dom';
+// import product from '../../common/product'
 
-import {Link} from 'react-router-dom'
-import product from '../../common/product'
+// Import Copyright and Footer Socials..........
+import CopyRight from '../../components/CopyRight/CopyRight';
 
+const Footer = (props) => {
+  // const productList = product()
 
-const Footer = (props) =>{
+  // console.log(productList)
 
-    const productList = product()
+  return (
+    <footer>
+      <div className="container footer-container">
+        <div>
+          <h4>About Us</h4>
+          <ul className="about-params param-links">
+            {FootersLinksData.Aboutus.map(({ link, linkname }, index) => {
+              return (
+                <li key={index}>
+                  <Link to={link}>{linkname}</Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
 
-    console.log(productList)
+        <div>
+          <h4>Discover Us</h4>
+          <ul className="discover-params param-links">
+            {FootersLinksData.Discover.map(({ link, linkname }, index) => {
+              return (
+                <li key={index}>
+                  <Link to={link}>{linkname}</Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
 
+        <div>
+          <h4>About Us</h4>
+          <ul className="myAccount-params param-links">
+            {FootersLinksData.Myaccount.map(({ link, linkname }, index) => {
+              return (
+                <li key={index}>
+                  <Link to={link}>{linkname}</Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
 
-    return(
-        <footer>
-            <div className="container footer-container">
-                <div>
-                    <h4>About Us</h4>
-                    <ul className="about-params param-links">
-                        {
-                            FootersLinksData.Aboutus.map(({link, linkname}, index)=>{
-                                return(
-                                    <li key={index}><Link to={link}>{linkname}</Link></li>
-                                )
-                            })
-                        }
-                    </ul>
-                </div>
+        <div>
+          <h4>Helps</h4>
+          <ul className="help-params param-links">
+            {FootersLinksData.Help.map(({ link, linkname }, index) => {
+              return (
+                <li key={index}>
+                  <Link to={link}>{linkname}</Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
+      <CopyRight />
+    </footer>
+  );
+};
 
-                <div>
-                    <h4>Discover Us</h4>
-                    <ul className="discover-params param-links">
-                        {
-                            FootersLinksData.Discover.map(({link, linkname}, index)=>{
-                                return(
-                                    <li key={index}><Link to={link}>{linkname}</Link></li>
-                                )
-                            })
-                        }
-                    </ul>
-                </div>
-
-                <div>
-                    <h4>About Us</h4>
-                    <ul className="myAccount-params param-links">
-                        {
-                            FootersLinksData.Myaccount.map(({link, linkname}, index)=>{
-                                return(
-                                    <li key={index}><Link to={link}>{linkname}</Link></li>
-                                )
-                            })
-                        }
-                    </ul>
-                </div>
-
-                <div>
-                    <h4>Helps</h4>
-                    <ul className="help-params param-links">
-                        {
-                            FootersLinksData.Help.map(({link, linkname}, index)=>{
-                                return(
-                                    <li key={index}><Link to={link}>{linkname}</Link></li>
-                                )
-                            })
-                        }
-                    </ul>
-                </div>
-            </div>
-        </footer>
-    )
-}
-
-export default Footer
+export default Footer;

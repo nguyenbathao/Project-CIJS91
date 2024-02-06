@@ -1,0 +1,10 @@
+.banner-container {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background-color: #fbcfe8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  background-image: url('../../assets/herobanner.png');
+}
