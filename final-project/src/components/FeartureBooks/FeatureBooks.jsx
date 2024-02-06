@@ -8,7 +8,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
-import { featuredBooksData } from '../../data/dataBookStore';
+import {featuredBooksData} from '../../data/data'
 
 import { BsArrowReturnRight } from 'react-icons/bs';
 
@@ -33,7 +33,8 @@ const breakpoints = {
   },
 };
 
-function FeatureBooks() {
+function FeatureBooks(props) {
+  const { products } = props;
   return (
     <section className="Featured">
       <div className="container features-book-container">
