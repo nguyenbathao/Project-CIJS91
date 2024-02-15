@@ -7,6 +7,7 @@ import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
 import { IoMdArrowForward } from 'react-icons/io';
 import { FiTrash2 } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 export default function CartDrawer(props) {
   const { open, setState } = props;
@@ -30,9 +31,9 @@ export default function CartDrawer(props) {
       <Box sx={{ width: 700, padding: 2 }} role="presentation">
         <div className="shopping-text">
           Shopping Bag ({itemAmount})
-          <IoMdArrowForward className="arrows-icon" />
+          {/* <IoMdArrowForward className="arrows-icon" /> */}
         </div>
-        <div style={{ minHeight: 800 }}>
+        <div style={{ minHeight: 700 }}>
           {cart.map((item) => {
             return <CartItem item={item} key={item.id} />;
           })}
@@ -46,6 +47,34 @@ export default function CartDrawer(props) {
             <FiTrash2 />
           </div>
         </div>
+        <Link 
+        style={{
+          marginTop: '1rem',
+          display: 'flex', 
+          padding: '1rem', 
+          justifyContent: 'center', 
+          alignItems: 'center', 
+          width: '100%', 
+          fontWeight: 500,
+          backgroundColor: '#e4eef0',
+          color: 'black'
+        }}>
+          View Cart
+        </Link>
+        <Link
+        style={{
+          marginTop: '1rem',
+          display: 'flex', 
+          padding: '1rem', 
+          justifyContent: 'center', 
+          alignItems: 'center', 
+          width: '100%', 
+          fontWeight: 500,
+          backgroundColor: '#3a3d3d',
+          color: 'white'
+        }}>
+          Check Out
+        </Link>
       </Box>
     </Drawer>
   );

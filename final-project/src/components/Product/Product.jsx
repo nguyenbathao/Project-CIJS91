@@ -2,7 +2,7 @@ import './Product.css';
 
 import React, { useContext } from 'react';
 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { BsPlus, BsEyeFill } from 'react-icons/bs';
 import { CartContext } from '../../context/CartContext';
@@ -11,12 +11,16 @@ function Product({ product }) {
   const { addToCart } = useContext(CartContext);
 
   const { id, image, category, title, price } = product;
+  const navigate = useNavigate();
+  const navigateProductDetail = () => {
+    navigate(`/product/${id}`, []);
+  };
 
   return (
     <div>
       <div className="borders">
         <div className="img-details">
-          <div className="details">
+          <div className="details" onClick={navigateProductDetail}>
             <img className="img" src={image} alt="" />
           </div>
           <div className="button-container">

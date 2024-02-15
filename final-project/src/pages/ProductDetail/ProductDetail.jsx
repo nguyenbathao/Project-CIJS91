@@ -76,6 +76,8 @@ const ProductDetail = () => {
                 paddingRight: '2rem',
                 color: ' #ffffff',
                 cursor: 'pointer',
+                marginTop:'1rem',
+                marginBottom: '1rem'
               }}
             >
               Add to Cart

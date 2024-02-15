@@ -2,9 +2,9 @@
   height: 100px;
   display: grid;
   place-items: center;
-  position: sticky;
-  top: 0;
-  background-color: var(--colo-bg-1);
+  position: relative ;
+  top: 10;
+  background-color:antiquewhite;
   z-index: 100;
   border: 1px solid var(--color-dark-Ex);
 }
@@ -12,6 +12,15 @@
 .navShadow{
     box-shadow: 0 0 4rem rgba(0, 0, 0, 0.2);
 }
+
+nav.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    transition: 0ms;
+}
+
 .nav-container {
   display: flex;
   align-items: center;
@@ -52,6 +61,14 @@
 .menu-button{
     display: none;
 }
+
+
+.nav-container.fixed{
+    background-color: white;
+    transition: .3s ease-in-out;
+}
+
+
 
 /*..........................Max-width:1024px..........................*/
 @media (max-width:1024px){

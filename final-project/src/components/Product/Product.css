@@ -5,7 +5,7 @@
   border-width: 1px;
   border-color: #7c3434;
   height: 300px;
-  box-sizing: border-box;
+  border: 1px solid;
 }
 
 .img-details {
@@ -22,6 +22,7 @@
   max-width: auto;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .img {

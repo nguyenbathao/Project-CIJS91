@@ -1,3 +1,5 @@
+import './TopProduct.css'
+
 import React from 'react';
 
 import { TopProductsData } from '../../data/dataStoreCloth';
@@ -35,7 +37,7 @@ function TopProduct() {
               style={{
                 position: 'relative',
                 borderRadius: '1rem',
-                backgroundColor: '#ffffff',
+                backgroundColor: 'rgb(227 227 227)',
                 textAlign: 'center',
                 maxWidth: '300px',
               }}
@@ -89,19 +91,10 @@ function TopProduct() {
                 </p>
                 <Link
                   to={'/store'}
-                  style={{
-                    paddingTop: '0.25rem',
-                    paddingBottom: '0.25rem',
-                    paddingLeft: '1rem',
-                    paddingRight: '1rem',
-                    marginTop: '1rem',
-                    borderRadius: '9999px',
-                    color: '#e65353',
-                    transitionDuration: '300ms',
-                    cursor: 'pointer',
-                  }}
                 >
-                  Order Now
+                  <button className='order-btn'>
+                    Order Now
+                  </button>
                 </Link>
               </div>
             </div>

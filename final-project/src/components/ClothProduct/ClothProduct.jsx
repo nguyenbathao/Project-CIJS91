@@ -1,8 +1,11 @@
+import './ClothProduct.css'
+
 import React from 'react';
 
 import { ProductsData } from '../../data/dataStoreCloth';
 
 import { FaStar } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 function ClothProduct() {
   return (
@@ -56,21 +59,12 @@ function ClothProduct() {
           </div>
           {/* view all button */}
           <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <button
-              style={{
-                paddingTop: '0.25rem',
-                paddingBottom: '0.25rem',
-                paddingLeft: '1.25rem',
-                paddingRight: '1.25rem',
-                marginTop: '2.5rem',
-                borderRadius: '0.375rem',
-                textAlign: 'center',
-                color: '#ee6161',
-                cursor: 'pointer',
-              }}
-            >
+            <Link to = {'/store'}>
+            <button className='viewall-btn'>
               View All
             </button>
+            </Link>
+            
           </div>
         </div>
       </div>

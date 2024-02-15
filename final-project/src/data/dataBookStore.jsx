@@ -309,7 +309,6 @@ import { GrLinkedinOption } from 'react-icons/gr';
 export const FootersLinksData = {
   Aboutus: [
     { linkname: 'vision ', link: '#' },
-    { linkname: 'articles ', link: '#' },
     { linkname: 'careers ', link: '#' },
     { linkname: 'service terms ', link: '#' },
     { linkname: 'donate ', link: '#' },

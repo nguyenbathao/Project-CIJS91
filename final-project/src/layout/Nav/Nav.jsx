@@ -15,11 +15,12 @@ import { VscMenu } from 'react-icons/vsc';
 import { GrClose } from 'react-icons/gr';
 
 // Import Use State...........................
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { BsBag } from 'react-icons/bs';
 import { FiUser } from 'react-icons/fi';
 import CartDrawer from '../../components/CartDrawer';
 import { CartContext } from '../../context/CartContext';
+
 
 const Nav = (props) => {
   // Use State For NavLinks Show And Hide..................
@@ -39,10 +40,20 @@ const Nav = (props) => {
     setIsNavLinksShowing(false);
   });
 
+
+  const [sticky, setSticky] = useState(false);
+  useEffect(() => {
+    const handleScroll = () =>{
+      setSticky(window.scrollY > 200);
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
+
   const [open, setOpen] = useState();
 
   return (
-    <nav>
+    <nav className={`${sticky ? "sticky" : ""}`}>
       <div className="container nav-container">
         {/* Logo */}
         <Link to={'/'} className="logo">

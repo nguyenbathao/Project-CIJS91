@@ -4,16 +4,11 @@ import { FootersLinksData} from '../../data/dataBookStore'
 
 
 import {Link} from 'react-router-dom'
-import product from '../../common/product'
 
 import CopyRight from '../../components/CopyRight/CopyRight'
 
 
 const Footer = (props) =>{
-
-    const productList = product()
-
-    console.log(productList)
 
 
     return(

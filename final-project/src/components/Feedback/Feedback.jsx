@@ -68,7 +68,7 @@ function Feedback() {
                       <p style={{ fontSize: '0.75rem', lineHeight: '1rem', color: '#6B7280' }}>
                         {data.text}
                       </p>
-                      <h1 style={{ fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '700' }}>
+                      <h1 style={{ fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '700', marginTop: '1rem' }}>
                         {data.name}
                       </h1>
                     </div>

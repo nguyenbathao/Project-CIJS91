@@ -51,7 +51,7 @@ h5 {
 h1 {
   font-size: 73px;
   /* line-height: 145px; */
-  color: var(--color-dark-Ex);
+  /* color: var(--color-dark-Ex); */
 }
 h2 {
   font-size: 48px;
@@ -121,10 +121,10 @@ small {
 .btn-border {
   border: 1px solid var(--color-dark);
 }
-button {
+/* button {
   background: transparent;
   border: none;
-}
+} */
 img {
   width: 100%;
   object-fit: cover;
